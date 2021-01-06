@@ -18,8 +18,24 @@
                 <label class="offscreen" for="search">Enter a search term
                 or phrase</label>
                 <input id="search" type="text" autocomplete="off" />
-                
+                <div id="clear" class="none button clear" role="button"
+                tabindex="0" aria-label="Clear search terms"> 
+                    X
+                </div>
+                <button id="searchButton" class="button searchButton"
+                type="submit" aria-label="Submit button">
+                    Search
+                </button>
             </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>            
+            </div>
+            <div id="searchResults" class="searchResults">
+                
+            </div>
         </section>
     
     
